@@ -7,6 +7,7 @@ for i in *; do
 		cp "$i" "$dir/."
 		cd "$dir"
 		7z x "$i"
+		rm "$i"
 		cd ..
 	fi
 done
